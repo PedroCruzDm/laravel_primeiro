@@ -1,0 +1,215 @@
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+body {
+    background: rgb(226, 226, 226);
+    background: radial-gradient(circle, rgba(226, 226, 226, 1) 0%, rgba(201, 201, 201, 1) 100%);
+  }
+
+  /* card jogos */
+  .card {
+    width: 190px;
+    border-radius: 51px;
+    background: linear-gradient(145deg, #a7a7a7, #c6c6c6);
+    box-shadow: 20px 20px 60px #9d9d9d,
+      -20px -20px 60px #d5d5d5;
+    padding: 1.4em;
+    border-bottom: 10px;
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+    border: 5px double #8c00ff;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+  
+  /*sessões*/
+  .parent {
+    display: grid;
+    margin-top: 30px;
+    margin-left: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+  }
+  
+  /*pagina jogo*/
+  .capa-jogo {
+    margin-top: 30px;
+  }
+  
+  .caixa-info {
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    /*white-space: nowrap;/*não passa do tamanho do elemento*/
+    overflow: hidden; /*esconde quando sai da div*/
+    padding: 10px;
+    border-radius: 44px;
+    background: linear-gradient(145deg, #afafaf, #d0d0d0);
+    box-shadow: 24px 24px 65px #636363,
+      -24px -24px 65px #ffffff;
+  }
+  
+  .info-titulo {
+    border-right-style: groove;
+    border-left-style: groove;
+    border-width: 320px;
+    border-color: purple;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .sub-titulo {
+    width: 25%;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-width: 80px;
+    border-color: purple;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .sub-tabela {
+    border-right-style: groove;
+    border-left-style: groove;
+    border-width: 12px;
+    border-color: purple;
+    text-align: center;
+    width: 20%;
+    padding-left: 5px;
+    margin-left: 20px;
+  }
+  
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  hr {
+    border-right-style: groove;
+    border-left-style: groove;
+    border-width: 1.5px;
+    border-color: purple;
+  }
+  
+  .info-img {
+    border-radius: 50%;
+    border: 2px;
+    margin-top: 15px;
+    box-shadow: 26px 26px 52px #b2b2b2,
+      -26px -26px 52px #fafafa;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th,
+  td {
+    text-align: center;
+    padding: 4px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2
+  }
+  
+  th {
+    background-color: #960896;
+    text-align: center;
+    color: white;
+  }
+  
+  .lista li {
+    margin-top: 5px;
+    list-style-position: outside;
+    padding: 0;
+    list-style: square;
+  }
+  
+  .form-contato{
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .form-contato label{
+    color: #6500b8;
+    padding: 5px;
+  }
+  
+  .form-contato input{
+    border: 2px;
+    border-color: #ce12ce;
+    border-radius:  30px;
+    border-style: groove;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .form-contato input:focus{
+    border-color: #6500b8;
+  }
+  
+  .form-contato input:hover{
+    border-color: #6500b8;
+  }
+  
+  .form-contato textarea{
+    border: 2px;
+    border-color: #ce12ce;
+    border-radius:  10px;
+    border-style: double;
+  }
+  
+  .form-contato textarea:hover{
+    border-color: #6500b8;
+  }
